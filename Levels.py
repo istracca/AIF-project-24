@@ -120,13 +120,15 @@ def CreateLevel6():
     new_level.set_start_pos((10, 10))
 
     new_level.fill_terrain(type='fillrect',flag='.', x1 = 0, y1 = 0, x2 = w-1, y2 = h-1)
-    new_level.fill_terrain(type='fillrect',flag='L',x1=1,y1=1,x2=1,y2=9)   
-    new_level.fill_terrain(type='fillrect',flag='L',x1=3,y1=1,x2=3,y2=9)   
-    new_level.fill_terrain(type='fillrect',flag='L',x1=5,y1=1,x2=5,y2=9)   
+    new_level.fill_terrain(type='fillrect',flag='L',x1=1,y1=3,x2=1,y2=5)   
+    new_level.fill_terrain(type='fillrect',flag='L',x1=1,y1=7,x2=1,y2=9)   
+    new_level.fill_terrain(type='fillrect',flag='L',x1=3,y1=1,x2=3,y2=4)
+    new_level.fill_terrain(type='fillrect',flag='L',x1=3,y1=6,x2=3,y2=9)     
+    new_level.fill_terrain(type='fillrect',flag='L',x1=5,y1=1,x2=5,y2=5)
+    new_level.fill_terrain(type='fillrect',flag='L',x1=5,y1=7,x2=5,y2=9)    
     new_level.fill_terrain(type='fillrect',flag='L',x1=7,y1=1,x2=7,y2=9)   
     new_level.fill_terrain(type='fillrect',flag='L',x1=9,y1=1,x2=9,y2=9)   
 
-    new_level.fill_terrain(type='fillrect',flag='L',x1=1,y1=1,x2=3,y2=1)
     new_level.fill_terrain(type='fillrect',flag='L',x1=5,y1=1,x2=7,y2=1)
 
     new_level.fill_terrain(type='fillrect',flag='L',x1=3,y1=9,x2=5,y2=9)

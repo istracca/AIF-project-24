@@ -10,7 +10,7 @@ def combination_2(MapGame, Joystick, Goal, SuccessorFunction):
 
     while(1):
         if CharacterPosition==Goal:
-            print("Target reached in ", moves, "mosse!")
+            print("Target reached in", moves, "moves!")
             return moves
         if CharacterPosition==MonsterPosition:
             print("Wolf wins")
