@@ -1,0 +1,3 @@
+minihack
+matplotlib
+gym
