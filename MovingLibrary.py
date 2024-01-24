@@ -16,7 +16,6 @@ class Moving:
             (-1, -1): 5, #Moving SE
             (-1, 1):  6, #Moving SW
             (1, 1):   7, #Moving NW
-            (0, 0):   46 #Rest
         }
         
         return self.__env.step(Moves[DiffStep])[0]

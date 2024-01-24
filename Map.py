@@ -7,7 +7,7 @@ class Map:
         self.__state = state
         
     def get_map_image(self):
-        # Rimuovi il bordo nero
+        # Remove the black border
         image = self.__state['pixel']
 
         rows = np.any(image != [0, 0, 0], axis=2).any(axis=1)
@@ -18,21 +18,21 @@ class Map:
         return image_without_borders
 
     def view_map(self):
-        # Ottieni l'immagine della mappa
+        # Get the map image
         image = self.get_map_image()
 
-        # Mostra la mappa
+        # Show the map
         plt.imshow(image)
         plt.show()
     
     def get_position_symbol(self, x, y):
         return chr(self.__state["chars"][x][y])
 
-    def get_player_location(self, symbol : str = "@") -> Tuple[int, int]:
+    def get_player_location(self, symbol: str = "@") -> Tuple[int, int]:
         x, y = np.where(self.__state["chars"] == ord(symbol))
         return (x[0], y[0])
 
-    def get_monsters_location(self, symbol : str = "d"):
+    def get_monsters_location(self, symbol: str = "d"):
         x, y = np.where(self.__state["chars"] == ord(symbol))
         arr_returned = []
         for i in range(len(x)):

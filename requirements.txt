@@ -1,4 +1,3 @@
 minihack
 matplotlib
-IPython
 gym
